@@ -1,0 +1,303 @@
+body {
+  font-family: 'Didact Gothic', sans-serif;
+  color: #2b2b2b;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+section {
+  padding: 5% 12%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h1, h2 {
+  font-family: 'Forum', cursive;
+}
+
+p {
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 1.4;
+}
+
+img {
+  width: 100%;
+}
+
+.header-section, .footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-section {
+  padding-bottom: 1%;
+}
+
+.header-img {
+  width: 80%;
+  max-width: 397px;
+}
+
+.shadow-img {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.grey-bg {
+  /* background: rgba(240,240,239,1);
+background: linear-gradient(187deg, rgba(255,255,255,1) 7%, rgba(240,240,239,1) 91%); */
+  background-color: #f0f0ef;
+}
+
+.top-nav {
+  margin-top: 5%;
+}
+
+.navbar-toggler {
+  display: block;
+  margin: 1rem auto;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-variant: small-caps;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 0.1s;
+  margin: 0 20px;
+}
+
+.social-media {
+  width: inherit;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.media-link {
+  opacity: 0.7;
+}
+
+.sml img {
+  width: auto;
+}
+
+.media-link:hover {
+  opacity: 0.5;
+}
+
+/*****    FOOTER    *****/
+footer {
+  text-align: center;
+}
+
+#footer-section {
+  width: 90%;
+  max-width: 397px;
+  margin: auto;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer-line {
+  margin-bottom: 20px;
+}
+
+.media-link {
+  margin-right: 20px;
+}
+
+.alp-item {
+  display: flex;
+  align-items: center;
+}
+
+.alp {
+  max-width: 44px;
+  margin-right: 20px;
+}
+
+.alp:hover {
+  opacity: 0.6;
+}
+
+.alp-item p {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+}
+
+.copy-1 {
+  font-size: .8rem;
+  display: block;
+  margin: 2rem auto 0 auto;
+}
+
+/*****     HOME PAGE     *****/
+/*****    GALLERY    *****/
+.di-cite {
+  background-color: #fff;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding: 10%;
+  border-radius: 5px;
+}
+
+.gal figure {
+  /* max-width: 490px; */
+}
+
+.galpic-sm {
+  cursor: pointer;
+}
+
+figcaption {
+  padding: 0 15%;
+  text-align: left;
+  margin: auto;
+}
+
+/*****    ABOUT    *****/
+#me-tile {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.me-pic {
+  padding: .6rem;
+  border-radius: .6rem;
+  background: #fff;
+}
+
+#art-bg {
+  opacity: .3;
+  box-shadow: rgba(59, 59, 59, 1) 2px 4px 8px 2px;
+}
+
+/*****    COMMISSION    *****/
+.tile-header {
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ueland-div {
+  display: flex;
+  align-items: center;
+}
+
+.pic {
+  padding: 10%;
+}
+
+/*****    MEDIA QUERIES    *****/
+@media all and (min-width: 1200px) {
+
+  /** ABOUT **/
+  #art-bg {
+    margin-top: 2rem;
+    background-image: url(../images/art-xl.png);
+    width: 1140px;
+    height: 346px;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+
+  /** ABOUT **/
+  #art-bg {
+    margin-top: 2rem;
+    background-image: url(../images/art-lg.png);
+    width: 960px;
+    height: 291px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+  /** ABOUT **/
+  #art-bg {
+    margin-top: 2rem;
+    background-image: url(../images/art-md.png);
+    width: 720px;
+    height: 218px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  p {
+    font-size: 1.2rem;
+  }
+
+  #navbar-list {
+    display: block;
+  }
+
+  .nav-item {
+    padding: 12px;
+    line-height: 1.2em;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+
+  /** ABOUT **/
+  #art-bg {
+    margin-top: 2rem;
+    background-image: url(../images/art-sm.png);
+    width: 540px;
+    height: 164px;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .title-break {
+    display: none;
+  }
+}
+
+@media all and (max-width: 575px) {
+  section {
+    padding: 5%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    padding: 5%;
+  }
+
+  .alp-item {
+    flex-direction: column;
+  }
+
+  .navbar-brand {
+    width: 80%;
+  }
+
+  .navbar-brand img {
+    width: 100%;
+  }
+
+  /*** FOOTER ***/
+  /** ABOUT **/
+  #art-bg {
+    display: none;
+  }
+}
