@@ -3,6 +3,7 @@ body {
   color: #2b2b2b;
   box-sizing: border-box;
   text-align: center;
+  background-color: #fff;
 }
 
 section {
@@ -25,6 +26,11 @@ p {
   font-size: 1.4rem;
   text-align: left;
   line-height: 1.4;
+}
+
+a {
+  text-decoration: underline;
+  color: #050505;
 }
 
 img {
@@ -51,8 +57,6 @@ img {
 }
 
 .grey-bg {
-  /* background: rgba(240,240,239,1);
-background: linear-gradient(187deg, rgba(255,255,255,1) 7%, rgba(240,240,239,1) 91%); */
   background-color: #f0f0ef;
 }
 
@@ -180,9 +184,8 @@ figcaption {
   background: #fff;
 }
 
-#art-bg {
+.art-bg {
   opacity: .3;
-  box-shadow: rgba(59, 59, 59, 1) 2px 4px 8px 2px;
 }
 
 /*****    COMMISSION    *****/
@@ -191,26 +194,152 @@ figcaption {
   font-family: 'Poppins', sans-serif;
 }
 
+.contact-btn {
+  margin: 5% auto 2%;
+  font-family: 'Poppins', sans-serif;
+  color: #2b2b2b;
+  border-color: #2b2b2b;
+}
+
+.contact-btn:hover {
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+}
+
+.btn-outline-dark.focus, .btn-outline-dark:focus {
+    box-shadow: none;
+}
+
 .ueland-div {
   display: flex;
   align-items: center;
+}
+
+.ueland-img {
+  border: 1px solid #2b2b2b;
 }
 
 .pic {
   padding: 10%;
 }
 
-/*****    MEDIA QUERIES    *****/
-@media all and (min-width: 1200px) {
 
-  /** ABOUT **/
-  #art-bg {
-    margin-top: 2rem;
-    background-image: url(../images/art-xl.png);
-    width: 1140px;
-    height: 346px;
-  }
+/*****    MODAL SECTION    *****/
+
+.row > .column {
+  /* padding: 0 8px; */
 }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 55px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* height: 100%; */
+  overflow: auto;
+  background-color: #000000b2;
+}
+
+/* Modal Content */
+.modal-section {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: left;
+}
+
+/* The Close Button */
+.closeSlide {
+  color: #303030;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.closeSlide:hover,
+.closeSlide:focus {
+  opacity: .5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  padding: 0 16px;
+  color: hsl(0, 0%, 13%);
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  text-decoration: none;
+  color: rgba(124, 124, 124, 0.966);
+}
+
+img.demo {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.active {
+  opacity: .8;
+  text-decoration: underline;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*****    MEDIA QUERIES    *****/
+
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
 
@@ -223,16 +352,6 @@ figcaption {
   }
 }
 
-@media all and (min-width: 768px) and (max-width: 991px) {
-
-  /** ABOUT **/
-  #art-bg {
-    margin-top: 2rem;
-    background-image: url(../images/art-md.png);
-    width: 720px;
-    height: 218px;
-  }
-}
 
 @media all and (max-width: 767px) {
   p {
@@ -249,16 +368,6 @@ figcaption {
   }
 }
 
-@media all and (min-width: 576px) and (max-width: 767px) {
-
-  /** ABOUT **/
-  #art-bg {
-    margin-top: 2rem;
-    background-image: url(../images/art-sm.png);
-    width: 540px;
-    height: 164px;
-  }
-}
 
 @media all and (min-width: 576px) {
   .title-break {
@@ -295,9 +404,4 @@ figcaption {
     width: 100%;
   }
 
-  /*** FOOTER ***/
-  /** ABOUT **/
-  #art-bg {
-    display: none;
-  }
 }

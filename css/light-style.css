@@ -65,6 +65,7 @@
 /* Next & previous buttons */
 .prev,
 .next {
+  text-decoration: none;
   cursor: pointer;
   position: absolute;
   bottom: 0;
