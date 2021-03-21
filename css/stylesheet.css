@@ -12,6 +12,7 @@ section {
 
 h1 {
   font-size: 3rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -176,7 +177,7 @@ footer {
 }
 
 figcaption {
-  padding: 0 15%;
+  padding: 10px 15%;
   text-align: left;
   margin: auto;
 }
@@ -352,6 +353,12 @@ img.hover-shadow {
 
 
 @media all and (max-width: 767px) {
+
+    h3{
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
   p {
     font-size: 1.2rem;
   }
@@ -365,14 +372,6 @@ img.hover-shadow {
     line-height: 1.2em;
   }
 }
-
-
-@media all and (min-width: 576px) {
-  .title-break {
-    display: none;
-  }
-}
-
 
 @media all and (max-width: 575px) {
   section {
@@ -403,4 +402,31 @@ img.hover-shadow {
     width: 100%;
   }
 
+}
+
+@media all and (max-width: 460px) {
+  h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+
+}
+
+@media all and (min-width: 340px) {
+  .title-break{
+    display: none;
+  }
 }
